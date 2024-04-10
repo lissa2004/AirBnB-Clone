@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Kamogelo",
+      "email": "Mak2@gmail.com",
+      "phone": "081-624-2712"
+    },
+
+    {
+        "id": 2,
+        "name": "Kamo",
+        "email": "Ma2@gmail.com",
+        "phone": "081-624-2712"
+    },
+
+    {
+        "id": 3,
+        "name": "Alakhe",
+        "email": "bo@gmail.com",
+        "phone": "081-624-2712"
+    }
+
+  ],
+
+  "bookings": [
+    {
+      "ListingId": 1,
+      "startDate": "2024-02-12",
+      "endDate": "2024-02-31",
+      "usersId": "1"
+    },
+    {
+      "ListingId": 2,
+      "startDate": "2022-02-12",
+      "endDate": "2022-02-31",
+      "usersId": "2"
+    }
+
+  ],
+
+  "listings": [{
+    "id": "1",
+    "bath_num": "1",
+    "bed_num": "2",
+    "zip": "1234",
+    "address": "123 Madibe Road",
+    "city": "Mahikeng",
+    "Price": "R2000 Per/Night",
+    "email": "Matk2@gmail.com",
+    "userId": "1"
+  }
+]
+}

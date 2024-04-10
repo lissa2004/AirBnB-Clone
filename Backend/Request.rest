@@ -1,0 +1,38 @@
+# GET ALL USERS
+GET http://localhost:5000/users/
+###
+
+#GET SINGLE USERS
+GET http://localhost:5000/users/1
+###
+
+# #REGISTER A USER
+# POST http://localhost:5000/register/
+# Content-type: application/json 
+
+# {
+#  "email":"leolo",
+#  "password":"leo@2000"
+# }
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"email":"leolo","password":"leo@2000"}' \
+  http://localhost:5000/register/
+
+# ###
+
+
+#GET ALL BOOKINGS
+GET http://localhost:5000/bookings/
+###
+
+#GET ALL BOOKINGS FOR A USER
+GET http://localhost:5000/users/3
+###
+
+#GET LISTINGS
+GET http://localhost:5000/listings/
+###
+
+
+

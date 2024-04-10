@@ -1,0 +1,10 @@
+.home_section{
+    display: flex;
+    padding: 30px;
+}
+
+.home_section_footer{
+    margin-left: 340px;
+    margin-right: 340px;
+    margin-bottom: 50px;
+}

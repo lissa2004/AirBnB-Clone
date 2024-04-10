@@ -1,0 +1,45 @@
+.banner{
+    height: 74vh;
+    width: 98vw;
+    position: relative;
+    background: url("https://a0.muscache.com/im/pictures/prohost-api/Hosting-39878763/original/9e9f9e06-7499-42c6-a686-8e5a3f3471c4.jpeg?im_w=960") no-repeat 100%;
+}
+
+.banner_info{
+    background: black;
+    color: white;
+    padding-top: 27vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    width: 272px;
+}
+
+.banner_info > button{
+    background: #ff7779;
+    color: white;
+    text-transform: inherit;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.banner_info > button:hover{
+    background: white;
+    color: #ff7779;
+}
+
+.banner_info > h5{
+    margin-top: 10px;
+}
+
+.banner_search{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_search > button{
+    background: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    color: #ff7779 !important;
+}
