@@ -1,16 +1,29 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import {thunk} from 'redux-thunk'; 
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import {thunk} from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import { listingsListReducer } from "./reducers/ListingsReducers"; 
+import { listingsListReducer } from './reducers/ListingsReducers';
 
-const rootReducer = combineReducers({listingsListReducer});
+// Combine reducers
+const rootReducer = combineReducers({
+  listings: listingsListReducer,
+});
 
 const middleware = [thunk];
 
+const composeEnhancers = process.env.NODE_ENV === 'development'
+  ? composeWithDevTools({}) 
+  : compose;
+
 const store = createStore(
   rootReducer,
-  composeWithDevTools(applyMiddleware(...middleware))
+  composeEnhancers(applyMiddleware(...middleware))
 );
+console.log('window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__:', window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__);
+console.log('compose:', compose);
+console.log('composeEnhancers:', composeEnhancers);
+
+console.log('composeEnhancers:', composeEnhancers);
+console.log('middleware:', middleware);
 
 export default store;

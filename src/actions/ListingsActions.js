@@ -1,4 +1,4 @@
-import {LISTING_LIST_REQUEST, LISTING_LIST_SUCCESS, LISTING_LIST_FAIL} from '.../type/ListingsTypes';
+import {LISTING_LIST_REQUEST, LISTING_LIST_SUCCESS, LISTING_LIST_FAIL} from '.../types/ListingsTypes';
 import axios from 'axios';
 
 export const listingsListReducer = () => async(dispatch) =>{
