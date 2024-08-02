@@ -1,6 +1,6 @@
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import { createStore, combineReducers, applyMiddleware, } from 'redux';
 import {thunk} from 'redux-thunk';
-import { composeWithDevTools } from 'redux-devtools-extension';
+
 
 import { listingsListReducer } from './reducers/ListingsReducers';
 
@@ -12,7 +12,7 @@ const rootReducer = combineReducers({
 const middleware = [thunk];
 
 const store = createStore(
-  rootReducer(applyMiddleware(...middleware))
+  rootReducer,(applyMiddleware(...middleware))
 );
 
 export default store;
