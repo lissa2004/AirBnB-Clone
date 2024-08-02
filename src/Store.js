@@ -11,19 +11,8 @@ const rootReducer = combineReducers({
 
 const middleware = [thunk];
 
-const composeEnhancers = process.env.NODE_ENV === 'development'
-  ? composeWithDevTools({}) 
-  : compose;
-
 const store = createStore(
-  rootReducer,
-  composeEnhancers(applyMiddleware(...middleware))
+  rootReducer(applyMiddleware(...middleware))
 );
-console.log('window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__:', window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__);
-console.log('compose:', compose);
-console.log('composeEnhancers:', composeEnhancers);
-
-console.log('composeEnhancers:', composeEnhancers);
-console.log('middleware:', middleware);
 
 export default store;
